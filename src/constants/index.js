@@ -9,24 +9,13 @@ import {
   css,
   reactjs,
   redux,
-  tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
-  docker,
-  meta,
-  starbucks,
   camvio,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  bcbssc,
   scdc,
-  mccarys,
-  army,
+  mccarys
 } from "../assets";
 
 export const navLinks = [
@@ -88,10 +77,6 @@ const technologies = [
     name: "Redux Toolkit",
     icon: redux,
   },
-  // {
-  //   name: "Tailwind CSS",
-  //   icon: tailwind,
-  // },
   {
     name: "Node JS",
     icon: nodejs,
@@ -100,31 +85,32 @@ const technologies = [
     name: "MongoDB",
     icon: mongodb,
   },
-  // {
-  //   name: "Three JS",
-  //   icon: threejs,
-  // },
   {
     name: "git",
     icon: git,
   },
-  // {
-  //   name: "figma",
-  //   icon: figma,
-  // },
-  // {
-  //   name: "docker",
-  //   icon: docker,
-  // },
+
 ];
 
 const experiences = [
+  {
+    title: "Middleware Developer",
+    company_name: "BlueCross BlueShield",
+    icon: bcbssc,
+    iconBg: "#5255C7",
+    date: "April 2024 - Present",
+    points: [
+      "Developed Restful APIs that integrated with a myriad of back-end architectures (host, SOAP, xslt, MQ)",
+      "Collaborated with large diverse teams within AGILE and Waterfall environments and communicated needs and challenges to stakeholders",
+      "Troubleshot high volume of varied network trouble tickets from front-end issues to middleware to back-end services using a diversified toolset (SPLUNK, APIC, ReadyAPI, SQL queries)",
+    ],
+  },
   {
     title: "Full-Stack Developer",
     company_name: "Camvio",
     icon: camvio,
     iconBg: "#383E56",
-    date: "September 2022 - Present",
+    date: "September 2022 - April 2024",
     points: [
       "Developed and Improved Billing SaaS that supported Provisioning, Billing, Account Management and more for large sized businesses.",
       "Created host of new features for React.js/Redux front-end and Java Spring back-end while maintaining quality and consistency.",
@@ -164,7 +150,7 @@ const testimonials = [
   {
     testimonial:
       "I thought it was impossible to make a website as beautiful as our product, but Rob proved me wrong.",
-    name: "Sara Lee",
+    name: "Oscar Frink",
     designation: "CFO",
     company: "Acme Co",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
@@ -172,7 +158,7 @@ const testimonials = [
   {
     testimonial:
       "I've never met a web developer who truly cares about their clients' success like Rob does.",
-    name: "Chris Brown",
+    name: "Don Sloth",
     designation: "COO",
     company: "DEF Corp",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
@@ -180,7 +166,7 @@ const testimonials = [
   {
     testimonial:
       "After Rob optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
+    name: "Matt Vinson",
     designation: "CTO",
     company: "456 Enterprises",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
@@ -189,28 +175,7 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
+    name: "Project Management Tool",
     description:
       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
@@ -227,30 +192,9 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: '',
     source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-  },
+  }
 ];
 
 export { services, technologies, experiences, testimonials, projects };
