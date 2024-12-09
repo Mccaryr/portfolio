@@ -74,7 +74,7 @@ const Projects = () => {
                 </motion.p>
             </div>
             <div className="w-full h-1/2 flex justify-center pt-5 gap-10 flex-wrap">
-                <div className="flex flex-col justify-center items-center">
+                <div className="flex flex-col justify-center items-center relative">
                     <a href={'https://github.com/Mccaryr/kaiju'} target="_blank" rel="noopener noreferrer">Github
                         repo</a>
                     <img
@@ -82,11 +82,15 @@ const Projects = () => {
                         alt={'Kaiju Project'}
                         onMouseEnter={() => setIsHovered(true)}
                         onMouseLeave={() => setIsHovered(false)}
-                        className='md:w-3/4 cursor-pointer'
+                        className='md:w-3/4 cursor-pointer rounded-2xl w-full'
                         onClick={() => window.open("https://kaiju-mke1.onrender.com/", '_blank')}
                     />
+                    <div className="bg-gray-800 absolute bottom-0 w-[75%] h-[25%] opacity-80 sm:flex p-8 rounded-b-2xl gap-8 hidden">
+                        <h2 className="text-white font-extrabold md:text-xl text-lg">Kaiju Project Manager</h2>
+                        <p className="text white">Task Management app. React front-end, Spring Boot back-end, Postgres database</p>
+                    </div>
                 </div>
-                <div className="flex flex-col justify-center items-center">
+                <div className="flex flex-col justify-center items-center relative">
                     <a href={'https://github.com/Mccaryr/dalt-wisney-ecommerce'} target="_blank"
                        rel="noopener noreferrer">Github repo</a>
                     <img
@@ -94,14 +98,19 @@ const Projects = () => {
                         alt={'Wisney Project'}
                         onMouseEnter={() => {
                             setIsWisneyHovered(true)
-                            setIsHovered(false)
                         }}
                         onMouseLeave={() => setIsWisneyHovered(false)}
-                        className='md:w-3/4 cursor-pointer'
+                        className='md:w-3/4 cursor-pointer rounded-2xl w-full'
                         onClick={() => window.open("https://dalt-wisney-ecommerce.onrender.com/", '_blank')}
                     />
+                    <div className="bg-gray-800 absolute bottom-0 w-[75%] h-[25%] opacity-80 sm:flex p-8 rounded-b-2xl gap-8 hidden">
+                        <h2 className="text-white font-extrabold md:text-xl text-lg">Dalt Wisney</h2>
+                        <p className="text white">E-commerce app. React front-end, Node.js back-end, NoSQL
+                            database</p>
+                    </div>
                 </div>
-                <div className="flex flex-col justify-center items-center">
+                <div className="flex flex-col justify-center items-center relative">
+                    <a href="https://github.com/Mccaryr/recipe-for-disaster" target="_blank" rel="noopener noreferrer">Github Repo</a>
                     <img
                         src={rfdImages[currentRFDImageIndex]}
                         alt={'Recipe for Disaster Project'}
@@ -109,9 +118,14 @@ const Projects = () => {
                             setIsRFDHovered(true)
                         }}
                         onMouseLeave={() => setIsRFDHovered(false)}
-                        className='md:w-3/4 cursor-pointer'
+                        className='md:w-3/4 cursor-pointer rounded-2xl w-full'
                         onClick={() => window.open("https://recipe-for-disaster-liart.vercel.app/", '_blank')}
                     />
+                    <div className="bg-gray-800 absolute bottom-0 w-[75%] h-[25%] opacity-80 sm:flex p-8 rounded-b-2xl gap-8 hidden">
+                        <h2 className="text-white font-extrabold md:text-xl text-md">Recipe for Disaster</h2>
+                        <p className="text white">Recipe app. Next.js for SSR, Tailwind for styling, Postgres
+                            database</p>
+                    </div>
                 </div>
             </div>
         </div>
