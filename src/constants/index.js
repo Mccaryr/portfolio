@@ -99,10 +99,10 @@ const technologies = [
 const experiences = [
   {
     title: "Middleware Developer",
-    company_name: "BlueCross BlueShield",
+    company_name: "BlueCross BlueShield (Contract)",
     icon: bcbssc,
     iconBg: "#5255C7",
-    date: "April 2024 - Present",
+    date: "April 2024 - September 2024",
     points: [
       "Developed Restful APIs that integrated with a myriad of back-end architectures (host, SOAP, xslt, MQ)",
       "Collaborated with large diverse teams within AGILE and Waterfall environments and communicated needs and challenges to stakeholders",

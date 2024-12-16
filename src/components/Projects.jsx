@@ -10,6 +10,7 @@ import img5 from '../assets/wisney-2.png'
 import img6 from '../assets/wisney-3.png'
 import img7 from '../assets/recipe-app/rfd-1.png'
 import img8 from '../assets/recipe-app/rfd-2.png'
+import githubLogo from '../assets/github-mark-white.png'
 
 const Projects = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -75,8 +76,9 @@ const Projects = () => {
             </div>
             <div className="w-full h-1/2 flex justify-center pt-5 gap-10 flex-wrap">
                 <div className="flex flex-col justify-center items-center relative">
-                    <a href={'https://github.com/Mccaryr/kaiju'} target="_blank" rel="noopener noreferrer">Github
-                        repo</a>
+                    <a className='flex justify-center' href={'https://github.com/Mccaryr/kaiju'} target="_blank" rel="noopener noreferrer">
+                        <img className='w-1/5' src={githubLogo} alt="Github link" />
+                    </a>
                     <img
                         src={images[currentImageIndex]}
                         alt={'Kaiju Project'}
@@ -91,8 +93,10 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className="flex flex-col justify-center items-center relative">
-                    <a href={'https://github.com/Mccaryr/dalt-wisney-ecommerce'} target="_blank"
-                       rel="noopener noreferrer">Github repo</a>
+                    <a className='flex justify-center' href={'https://github.com/Mccaryr/dalt-wisney-ecommerce'} target="_blank"
+                       rel="noopener noreferrer">
+                        <img className='w-1/5' src={githubLogo} alt="Github link"/>
+                    </a>
                     <img
                         src={wisneyImages[currentWisneyImageIndex]}
                         alt={'Wisney Project'}
@@ -110,7 +114,9 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className="flex flex-col justify-center items-center relative">
-                    <a href="https://github.com/Mccaryr/recipe-for-disaster" target="_blank" rel="noopener noreferrer">Github Repo</a>
+                    <a className='flex justify-center' href="https://github.com/Mccaryr/recipe-for-disaster" target="_blank" rel="noopener noreferrer">
+                        <img className='w-1/5' src={githubLogo} alt="Github link"/>
+                    </a>
                     <img
                         src={rfdImages[currentRFDImageIndex]}
                         alt={'Recipe for Disaster Project'}
