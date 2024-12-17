@@ -2,12 +2,12 @@ import { styles } from '../styles'
 import {fadeIn, textVariant} from "../utils/motion.js";
 import {motion} from "framer-motion";
 import {useEffect, useState} from "react";
-import img1 from '../assets/kaiju-1.png'
-import img2 from '../assets/kaiju-2.png'
-import img3 from '../assets/kaiju-3.png'
-import img4 from '../assets/wisney-1.png'
-import img5 from '../assets/wisney-2.png'
-import img6 from '../assets/wisney-3.png'
+import img1 from '../assets/kaiju/kaiju-1.png'
+import img2 from '../assets/kaiju/kaiju-2.png'
+import img3 from '../assets/kaiju/kaiju-3.png'
+import img4 from '../assets/wisney/wisney-1.png'
+import img5 from '../assets/wisney/wisney-2.png'
+import img6 from '../assets/wisney/wisney-3.png'
 import img7 from '../assets/recipe-app/rfd-1.png'
 import img8 from '../assets/recipe-app/rfd-2.png'
 import githubLogo from '../assets/github-mark-white.png'
