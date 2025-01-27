@@ -76,9 +76,13 @@ const Projects = () => {
             </div>
             <div className="w-full h-1/2 flex justify-center pt-5 gap-10 flex-wrap">
                 <div className="flex flex-col justify-center items-center relative">
-                    <a className='flex justify-center' href={'https://github.com/Mccaryr/kaiju'} target="_blank" rel="noopener noreferrer">
-                        <img className='w-1/5' src={githubLogo} alt="Github link" />
-                    </a>
+                    <div className="flex sm:w-3/4 w-[90vw]">
+                        <a className="inline-block w-1/5" href={'https://github.com/Mccaryr/kaiju'} target="_blank"
+                           rel="noopener noreferrer">
+                            <img className="sm:w-[20%] w-[60%]"  src={githubLogo} alt="Github link"/>
+                        </a>
+                        <p className="content-center sm:text-[16px] text-[11px]">Tech Stack: React | Tailwind | Spring | Postgres | AWS Lambda</p>
+                    </div>
                     <img
                         src={images[currentImageIndex]}
                         alt={'Kaiju Project'}
@@ -87,16 +91,20 @@ const Projects = () => {
                         className='md:w-3/4 cursor-pointer rounded-2xl w-full'
                         onClick={() => window.open("https://kaiju-mke1.onrender.com/", '_blank')}
                     />
-                    <div className="bg-gray-800 absolute bottom-0 w-[75%] h-[25%] opacity-80 sm:flex p-8 rounded-b-2xl gap-8 hidden">
-                        <h2 className="text-white font-extrabold md:text-xl text-lg">Kaiju Project Manager</h2>
+                    <div className="bg-gray-800 absolute bottom-0 w-[75%] h-[15%] opacity-80 sm:flex p-8 rounded-b-2xl gap-8 hidden">
+                        <h2 className="text-white font-extrabold md:text-xl text-lg">Kaiju</h2>
                         <p className="text white">Task Management app. React front-end, Spring Boot back-end, Postgres database</p>
                     </div>
                 </div>
                 <div className="flex flex-col justify-center items-center relative">
-                    <a className='flex justify-center' href={'https://github.com/Mccaryr/dalt-wisney-ecommerce'} target="_blank"
-                       rel="noopener noreferrer">
-                        <img className='w-1/5' src={githubLogo} alt="Github link"/>
-                    </a>
+                    <div className="flex sm:w-3/4 w-[90vw]">
+                        <a className='inline-block w-1/5' href={'https://github.com/Mccaryr/dalt-wisney-ecommerce'}
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <img className='sm:w-[20%] w-[60%]' src={githubLogo} alt="Github link"/>
+                        </a>
+                        <p className="content-center sm:text-[16px] text-[11px]">Tech Stack: React | Redux | Node.js | NoSQL</p>
+                    </div>
                     <img
                         src={wisneyImages[currentWisneyImageIndex]}
                         alt={'Wisney Project'}
@@ -107,16 +115,21 @@ const Projects = () => {
                         className='md:w-3/4 cursor-pointer rounded-2xl w-full'
                         onClick={() => window.open("https://dalt-wisney-ecommerce.onrender.com/", '_blank')}
                     />
-                    <div className="bg-gray-800 absolute bottom-0 w-[75%] h-[25%] opacity-80 sm:flex p-8 rounded-b-2xl gap-8 hidden">
+                    <div className="bg-gray-800 absolute bottom-0 w-[75%] h-[15%] opacity-80 sm:flex p-8 rounded-b-2xl gap-8 hidden">
                         <h2 className="text-white font-extrabold md:text-xl text-lg">Dalt Wisney</h2>
                         <p className="text white">E-commerce app. React front-end, Node.js back-end, NoSQL
                             database</p>
                     </div>
                 </div>
                 <div className="flex flex-col justify-center items-center relative">
-                    <a className='flex justify-center' href="https://github.com/Mccaryr/recipe-for-disaster" target="_blank" rel="noopener noreferrer">
-                        <img className='w-1/5' src={githubLogo} alt="Github link"/>
-                    </a>
+                    <div className="flex sm:w-3/4 w-[90vw]">
+                        <a className='inline-block w-1/5' href="https://github.com/Mccaryr/recipe-for-disaster"
+                           target="_blank" rel="noopener noreferrer">
+                            <img className='sm:w-[20%] w-[60%]' src={githubLogo} alt="Github link"/>
+                        </a>
+                        <p className="content-center sm:text-[16px] text-[11px]">Tech Stack: Next | Tailwind | Postgres</p>
+                    </div>
+
                     <img
                         src={rfdImages[currentRFDImageIndex]}
                         alt={'Recipe for Disaster Project'}
@@ -127,7 +140,8 @@ const Projects = () => {
                         className='md:w-3/4 cursor-pointer rounded-2xl w-full'
                         onClick={() => window.open("https://recipe-for-disaster-liart.vercel.app/", '_blank')}
                     />
-                    <div className="bg-gray-800 absolute bottom-0 w-[75%] h-[25%] opacity-80 sm:flex p-8 rounded-b-2xl gap-8 hidden">
+                    <div
+                        className="bg-gray-800 absolute bottom-0 w-[75%] h-[15%] opacity-80 sm:flex p-8 rounded-b-2xl gap-8 hidden">
                         <h2 className="text-white font-extrabold md:text-xl text-md">Recipe for Disaster</h2>
                         <p className="text white">Recipe app. Next.js for SSR, Tailwind for styling, Postgres
                             database</p>
