@@ -18,6 +18,11 @@ import {
   mccarys
 } from "../assets";
 
+const wisneyImages = import.meta.glob("../assets/wisney/*.png", { eager: true });
+const kaijuImages = import.meta.glob("../assets/kaiju/*.png", { eager: true });
+const rfdImages = import.meta.glob("../assets/recipe-app/*.png", { eager: true });
+const fafImages = import.meta.glob("../assets/find-a-friend/*.png", { eager: true });
+
 export const navLinks = [
   {
     id: "about",
@@ -177,28 +182,38 @@ const testimonials = [
   },
 ];
 
-const projects = [
+const portfolioProjects = [
   {
-    name: "Project Management Tool",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: '',
-    source_code_link: "https://github.com/",
-  }
+    name: "Kaiju",
+    images: Object.values(kaijuImages).map((img) => img.default),
+    techStack: "React | Tailwind | Spring | Postgres | AWS Lambda",
+    github: "https://github.com/Mccaryr/kaiju",
+    liveDemo: "https://kaiju-mke1.onrender.com/",
+    description: "Task Management app. React front-end, Spring Boot back-end, Postgres database",
+  },
+  {
+    name: "Dalt Wisney",
+    images: Object.values(wisneyImages).map((img) => img.default),
+    techStack: "React | Redux | Node.js | NoSQL",
+    github: "https://github.com/Mccaryr/dalt-wisney-ecommerce",
+    liveDemo: "https://dalt-wisney-ecommerce.onrender.com/",
+    description: "E-commerce app. React front-end, Node.js back-end, NoSQL database",
+  },
+  {
+    name: "Recipe for Disaster",
+    images: Object.values(rfdImages).map((img) => img.default),
+    techStack: "Next | Tailwind | Postgres",
+    github: "https://github.com/Mccaryr/recipe-for-disaster",
+    liveDemo: "https://recipe-for-disaster-liart.vercel.app/",
+    description: "Recipe app. Next.js for SSR, Tailwind for styling, Postgres database",
+  },
+  {
+    name: "Fetch A Friend",
+    images: Object.values(fafImages).map((img) => img.default),
+    techStack: "React | SCSS | Jest",
+    github: "https://github.com/Mccaryr/fetch-a-friend",
+    liveDemo: "https://fetch-a-friend-eight.vercel.app/",
+    description: "Dog Adoption site that has pagination, advanced filtering, and robust testing",
+  },
 ];
-
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, portfolioProjects };
